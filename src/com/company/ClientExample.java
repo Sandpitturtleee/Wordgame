@@ -18,7 +18,7 @@ public class ClientExample {
 
         oos = new ObjectOutputStream(s.getOutputStream());
         System.out.println("Wysłanie informacji do serwera...");
-        oos.writeObject("hello server!");
+        oos.writeObject("hello server test!");
 
         ois = new ObjectInputStream(s.getInputStream());
         String msg = (String) ois.readObject();
